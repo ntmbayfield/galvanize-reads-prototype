@@ -4,7 +4,7 @@
   "description": "**Galvanize Reads** is a book catalog service that stores a list of recommended technology books. You are building a web app for them. It should allow you to:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/nodemon server/index.js --ignore node_modules/"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Jbays/galvanize-reads-prototype#readme",
   "dependencies": {
+    "express": "^4.15.3",
     "knex": "^0.13.0",
+    "nodemon": "^1.11.0",
     "pg": "^6.2.4"
   }
 }
