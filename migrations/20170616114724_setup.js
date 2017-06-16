@@ -1,4 +1,3 @@
-
 exports.up = function(knex, Promise) {
   return Promise.all(
   	[
@@ -9,12 +8,16 @@ exports.up = function(knex, Promise) {
 				table.string('biography');
 				table.string('portrait_url');
 				table.string('book_id');
-  		})
-
+  		}),
+  		knex('authors').insert({first_name:"Tucker",last_name:"Max",biography:"I am an a..."})
 		]
 	)
 };
 
 exports.down = function(knex, Promise) {
-  
+  return Promise.all(
+  	[
+  		knex.schema.dropTable('authors')
+  	]
+	)
 };
