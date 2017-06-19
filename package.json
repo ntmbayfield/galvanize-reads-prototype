@@ -1,0 +1,24 @@
+{
+  "name": "galvanize-reads-prototype",
+  "version": "1.0.0",
+  "description": "**Galvanize Reads** is a book catalog service that stores a list of recommended technology books. You are building a web app for them. It should allow you to:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jbays/galvanize-reads-prototype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jbays/galvanize-reads-prototype/issues"
+  },
+  "homepage": "https://github.com/Jbays/galvanize-reads-prototype#readme",
+  "dependencies": {
+    "knex": "^0.13.0",
+    "nodemon": "^1.11.0",
+    "pg": "^6.2.4"
+  }
+}
