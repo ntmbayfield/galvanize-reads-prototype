@@ -1,14 +1,13 @@
 // Update with your config settings.
 
 module.exports = {
-
   development: {
     client: 'postgresql',
     connection:{
       host: "localhost",
       user: "justin.baize",
       password:"",
-      database: 'first_try'
+      database: 'second_try'
     }
   },
 
