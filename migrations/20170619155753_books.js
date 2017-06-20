@@ -5,7 +5,7 @@ exports.up = (knex) =>
 	//this creates the books table 
 	//  with columns (book_uid, title, genre, description, cover_url)
 	knex.schema.createTable('books',function(table){
-		table.increments('book_uid').primary();
+		table.increments().primary();
 		table.string('title');
 		table.string('genre');
 		table.string('description');
