@@ -1,6 +1,6 @@
 'use strict';
 
-//here lies all the initial seed entries for the author_books join table
+//here lies all the initial seed entries for the books_authors join table
 module.exports = [
   //the first book has three authors
   {
