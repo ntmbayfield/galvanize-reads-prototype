@@ -1,6 +1,5 @@
 'use strict';
 
-//do these table.string invocations need "notNullable"?  Or something else?
 exports.up = function(knex,Promise){
 	//this creates the authors table 
 	//  with columns (id, first_name, last_name, biography, portrait_url)
