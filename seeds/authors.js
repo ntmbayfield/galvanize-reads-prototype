@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //SELECT author_1_first_name, 
 //  author_1_last_name, 
 //  author_1_biography,
@@ -48,3 +49,27 @@ exports.seed = function(knex, Promise) {
       )
     });
 };
+=======
+'use strict';
+
+const authors = require('../entries/authorSeedEntries');
+
+// exports.seed = function(knex, Promise) {
+//   return knex('authors').del()
+//     .then(() =>
+//        knex('authors').insert(authors)
+//         .then(() =>
+//           knex.raw('SELECT setval(\'authors_id_seq\', (SELECT MAX(id) FROM authors))'));
+//         )
+//     };
+// };
+
+exports.seed = function (knex, Promise) {
+  // Deletes ALL existing entries
+  return knex('authors').del()
+    .then(() =>
+       knex('authors').insert(authors))
+       .then(() => knex.raw(
+      'SELECT setval(\'authors_id_seq\', (SELECT MAX(id) FROM authors))'));
+};
+>>>>>>> error: insert or update on table books_authors violates foreign key constraint
